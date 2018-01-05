@@ -16,7 +16,7 @@ module Car
     def drive
       loop do
         if @current_speed == @max_speed
-          puts "This #{@brand} #{self.class.name.demodulize} with a current speed of #{@current_speed}, has reached its max speed of #{@max_speed}"
+          puts "This #{@brand} #{self.class.name.split('::').last} with a current speed of #{@current_speed}, has reached its max speed of #{@max_speed}"
           break
         else
           accelerate do

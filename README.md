@@ -14,9 +14,11 @@ Inherits from Base
 * brand = 'Chevy'
 
 ###### TRY IT OUT
+From within the ruby examples folder, start irb and type in the lines below.
 The result of the following should print a string when it hits max speed.
+
 ```
-require 'car'
+require_relative 'car'
 
 camaro = Car::Camaro.new
 camaro.drive
